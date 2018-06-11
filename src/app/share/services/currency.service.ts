@@ -14,6 +14,7 @@ export class CurrencyService {
     currency = new Currency();
   }
 
-  // public getCurrencies(): Observable<Currency>[];
-
+  public getCurrencyById(id) {
+    return this.currency[id];
+  }
 }

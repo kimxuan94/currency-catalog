@@ -1,16 +1,12 @@
-<div>
-  {{ currency | json }}
-</div>
-<br>
 <div class="container">
   <div class="row" *ngIf="currency">
     <ul class="list-group col-sm-6 col-12" *ngFor="let currentCurrency of currency">
       <div>
-        <li class="list-group-item">
+        <a><li class="list-group-item" (click)="onSelect(currency)">
           <span>ID: </span> {{ currentCurrency.id }}
           <span>Type: </span> {{ currentCurrency.attributes.currency_type }}
           <span>Symbol: </span> {{ currentCurrency.attributes.symbol }}
-        </li>
+        </li></a>
       </div>
     </ul>
   </div>

@@ -1,0 +1,24 @@
+<div class="container" *ngIf="currency">
+    <ul *ngFor="let c of currency" >
+        <li>
+          <span>code :</span>
+          {{c.attributes.code}}
+        </li>
+        <li>
+          <span>name :</span>
+          {{c.attributes.name}}
+        </li>
+        <li>
+          <span>currency_type :</span>
+          {{c.attributes.currency_type}}
+        </li>
+        <li>
+          <span>code_iso_numeric3 :</span>
+          {{c.attributes.code_iso_numeric3}}
+        </li>
+        <li>
+          <span>code_iso_alpha3 :</span>
+          {{c.attributes.code_iso_alpha3}}
+        </li>
+      </ul>
+</div>
