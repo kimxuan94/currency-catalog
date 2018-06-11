@@ -8,5 +8,12 @@ import { CURRENCIES } from '../data/mock-currencies';
 })
 export class CurrencyService {
 
-  constructor() { }
+  constructor(
+    private currency: Currency,
+  ) {
+    currency = new Currency();
+  }
+
+  // public getCurrencies(): Observable<Currency>[];
+
 }
