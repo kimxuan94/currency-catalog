@@ -10,10 +10,15 @@ import { CURRENCIES } from 'src/app/share/data/mock-currencies';
 export class CurrencyListComponent implements OnInit {
 
  currency = CURRENCIES;
+ selectedCurrency: Currency;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(currency: Currency): void {
+    this.selectedCurrency = currency;
   }
 
 }

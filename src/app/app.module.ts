@@ -13,7 +13,6 @@ import { CurrencyType } from 'src/app/share/models/currency-type.enum';
   ],
   imports: [
     BrowserModule,
-    Currency,
   ],
   providers: [],
   bootstrap: [AppComponent]

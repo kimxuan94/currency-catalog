@@ -1,8 +1,17 @@
+<div>
+  {{ currency | json }}
+</div>
+<br>
 <div class="container">
-    <div class="row" *ngIf="currency">
-      {{ currencies }}
-      <div class="col-sm-6 col-12" *ngFor="let currency of currencies">
-        {{ currency.id }}
+  <div class="row" *ngIf="currency">
+    <ul class="list-group col-sm-6 col-12" *ngFor="let currentCurrency of currency">
+      <div>
+        <li class="list-group-item">
+          <span>ID: </span> {{ currentCurrency.id }}
+          <span>Type: </span> {{ currentCurrency.attributes.currency_type }}
+          <span>Symbol: </span> {{ currentCurrency.attributes.symbol }}
+        </li>
       </div>
-    </div>
+    </ul>
   </div>
+</div>

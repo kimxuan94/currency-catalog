@@ -1,6 +1,4 @@
-import { Currency } from './../models/currency';
-
-export const CURRENCIES: Currency =
+export const CURRENCIES =
     [
         {
             "id": "USD",
